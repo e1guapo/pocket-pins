@@ -65,6 +65,40 @@ header h1 {
   width: 100%;
 }
 
+#sources {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  padding: 8px 16px;
+  background: var(--warm-bg);
+  border-bottom: 1px solid #e0d8c8;
+}
+
+.source-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 12px;
+  padding: 4px 10px;
+  border-radius: 14px;
+  background: white;
+  border: 1px solid #e0d8c8;
+  color: var(--text);
+  text-decoration: none;
+  line-height: 1.3;
+}
+
+.source-chip:hover {
+  border-color: var(--pink);
+  color: var(--pink);
+}
+
+.source-chip-count {
+  font-weight: 600;
+  color: var(--text-light);
+  font-size: 11px;
+}
+
 #shop-list-container {
   flex: 1;
   overflow-y: auto;

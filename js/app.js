@@ -8,7 +8,7 @@
     specialty: '#7b1fa2'
   };
 
-  let map, userMarker, userLatLng, allPlaces = [], markers = [];
+  let map, userMarker, userLatLng, allPlaces = [], collections = [], markers = [];
 
   function haversine(lat1, lon1, lat2, lon2) {
     const R = 6371e3;
@@ -137,10 +137,24 @@
     document.getElementById('locate-btn').classList.remove('active');
   }
 
+  function renderSources() {
+    const container = document.getElementById('sources');
+    container.innerHTML = collections.map(c => {
+      const inner = c.source + ' <span class="source-chip-count">(' + c.places.length + ')</span>';
+      if (c.sourceUrl) {
+        return '<a class="source-chip" href="' + c.sourceUrl + '" target="_blank" rel="noopener">' + inner + '</a>';
+      }
+      return '<span class="source-chip">' + inner + '</span>';
+    }).join('');
+  }
+
   async function loadData() {
     const res = await fetch('data/shops.json');
     const db = await res.json();
-    allPlaces = db.collections.flatMap(c => c.places);
+    collections = db.collections;
+    allPlaces = collections.flatMap(c =>
+      c.places.map(p => Object.assign({}, p, { _source: c.source }))
+    );
     return allPlaces;
   }
 
@@ -170,6 +184,7 @@
     try {
       const places = await loadData();
       document.getElementById('loading').style.display = 'none';
+      renderSources();
       addMarkers(places);
       renderList();
     } catch (err) {
