@@ -1,0 +1,371 @@
+{
+  "collections": [
+    {
+      "name": "Pastry Shops",
+      "source": "David Lebovitz",
+      "sourceUrl": "https://www.davidlebovitz.com/paris-pastry-shops-chocolate-bakeries-patisseries-french-france/",
+      "places": [
+        {
+          "name": "Fouquet",
+          "address": "36 rue Laffitte",
+          "arrondissement": "9th",
+          "category": "chocolatier",
+          "description": "Confectionery since 1852. Darker chocolate with ganache centers and fruit jellies.",
+          "lat": 48.8738301,
+          "lng": 2.3380335
+        },
+        {
+          "name": "Vandermeersch",
+          "address": "278 avenue Daumesnil",
+          "arrondissement": "12th",
+          "category": "bakery",
+          "description": "Famous for Kougelhof cake and pain rustique bread.",
+          "lat": 48.8356541,
+          "lng": 2.405692
+        },
+        {
+          "name": "Du Pain et des Idées",
+          "address": "34 rue Yves Toudic",
+          "arrondissement": "10th",
+          "category": "bakery",
+          "description": "Known for Pain des amis and exceptional croissants.",
+          "lat": 48.871197,
+          "lng": 2.3628861
+        },
+        {
+          "name": "Archibald",
+          "address": "28 rue des Fossés Saint-Bernard",
+          "arrondissement": "5th",
+          "category": "bakery",
+          "description": "Organic breads. Specialty is Le Parisien, an einkorn loaf.",
+          "lat": 48.8481901,
+          "lng": 2.3542032
+        },
+        {
+          "name": "Pierre Hermé",
+          "address": "72 rue Bonaparte",
+          "arrondissement": "6th",
+          "category": "patisserie",
+          "description": "Father of modern French pastry. Famous for macarons and the Ispahan flavor.",
+          "lat": 48.8515261,
+          "lng": 2.332785
+        },
+        {
+          "name": "Poilâne",
+          "address": "8 rue du Cherche-Midi",
+          "arrondissement": "6th",
+          "category": "bakery",
+          "description": "Iconic wood-oven bakery since 1932. Sourdough bread, apple tarts, and Punitions butter cookies.",
+          "lat": 48.8512738,
+          "lng": 2.3289815
+        },
+        {
+          "name": "Jean-Charles Rochoux",
+          "address": "16 rue d'Assas",
+          "arrondissement": "6th",
+          "category": "chocolatier",
+          "description": "Chocolate sculptures and hazelnut praline paste.",
+          "lat": 48.8491547,
+          "lng": 2.3285159
+        },
+        {
+          "name": "Bague de Kenza",
+          "address": "106 rue Saint-Maur",
+          "arrondissement": "11th",
+          "category": "specialty",
+          "description": "North African pastries made with fresh nuts and honey.",
+          "lat": 48.8663478,
+          "lng": 2.3768216
+        },
+        {
+          "name": "Le Chocolat Alain Ducasse",
+          "address": "40 rue de la Roquette",
+          "arrondissement": "11th",
+          "category": "chocolatier",
+          "description": "First bean-to-bar chocolate shop in Paris, from the famed chef.",
+          "lat": 48.8544293,
+          "lng": 2.3721818
+        },
+        {
+          "name": "La Maison du Chocolat",
+          "address": "225 rue du Faubourg Saint-Honoré",
+          "arrondissement": "8th",
+          "category": "chocolatier",
+          "description": "Classic Parisian chocolate shop. Celebrated for perfected ganache.",
+          "lat": 48.877205,
+          "lng": 2.2997795
+        },
+        {
+          "name": "Jacques Génin",
+          "address": "133 rue de Turenne",
+          "arrondissement": "3rd",
+          "category": "chocolatier",
+          "description": "Buttery caramels. Tea salon with made-to-order pastries.",
+          "lat": 48.8644691,
+          "lng": 2.364616
+        },
+        {
+          "name": "Chambelland",
+          "address": "14 rue Ternaux",
+          "arrondissement": "11th",
+          "category": "bakery",
+          "description": "Gluten-free bakery using rice and buckwheat flours. Standout lemon tart.",
+          "lat": 48.8643923,
+          "lng": 2.3733021
+        },
+        {
+          "name": "Des Gâteaux et du Pain",
+          "address": "63 boulevard Pasteur",
+          "arrondissement": "15th",
+          "category": "patisserie",
+          "description": "Breads and pastries by a former Pierre Hermé pastry chef.",
+          "lat": 48.8412468,
+          "lng": 2.314518
+        },
+        {
+          "name": "Patrick Roger",
+          "address": "108 boulevard Saint-Germain",
+          "arrondissement": "6th",
+          "category": "chocolatier",
+          "description": "Intriguing flavors: lemongrass, saffron. Chocolate sculptures in the window.",
+          "lat": 48.8518358,
+          "lng": 2.3419715
+        },
+        {
+          "name": "Tout Autour du Pain",
+          "address": "134 rue de Turenne",
+          "arrondissement": "3rd",
+          "category": "bakery",
+          "description": "Award-winning baguette de tradition and Schwarzbrot bread.",
+          "lat": 48.864665,
+          "lng": 2.3648301
+        },
+        {
+          "name": "Aux Merveilleux de Fred",
+          "address": "129 bis rue Saint-Charles",
+          "arrondissement": "15th",
+          "category": "patisserie",
+          "description": "Specializes in Merveilleux — meringue pastries layered with whipped cream.",
+          "lat": 48.8439498,
+          "lng": 2.2833493
+        },
+        {
+          "name": "La Pâtisserie Cyril Lignac",
+          "address": "24 rue Paul Bert",
+          "arrondissement": "11th",
+          "category": "patisserie",
+          "description": "Chef Cyril Lignac's pastry shop. Éclairs, croissants, and pain aux céréales.",
+          "lat": 48.8525737,
+          "lng": 2.3850093
+        },
+        {
+          "name": "Berthillon",
+          "address": "31 rue Saint-Louis en l'Île",
+          "arrondissement": "4th",
+          "category": "ice-cream",
+          "description": "Legendary Parisian ice cream. Understated scoops and exceptional fruit sorbets.",
+          "lat": 48.8517084,
+          "lng": 2.356718
+        },
+        {
+          "name": "Boulangerie Utopie",
+          "address": "20 rue Jean-Pierre Timbaud",
+          "arrondissement": "11th",
+          "category": "bakery",
+          "description": "Poppy seed and sesame baguettes with a hint of curry.",
+          "lat": 48.865336,
+          "lng": 2.368738
+        },
+        {
+          "name": "Éric Kayser",
+          "address": "8 rue Monge",
+          "arrondissement": "5th",
+          "category": "bakery",
+          "description": "Renowned baker. Known for pain aux graines and financiers.",
+          "lat": 48.8492219,
+          "lng": 2.3494446
+        },
+        {
+          "name": "Hugo & Victor",
+          "address": "40 boulevard Raspail",
+          "arrondissement": "7th",
+          "category": "patisserie",
+          "description": "Most refined pâtisserie. Deconstructed French pastries with unusual flavors.",
+          "lat": 48.8524837,
+          "lng": 2.3263476
+        },
+        {
+          "name": "L'Éclair de Génie",
+          "address": "122 rue Montmartre",
+          "arrondissement": "2nd",
+          "category": "patisserie",
+          "description": "All-éclair boutique with seasonal flavor variations.",
+          "lat": 48.867929,
+          "lng": 2.3438215
+        },
+        {
+          "name": "Henri Le Roux",
+          "address": "1 rue de Bourbon le Château",
+          "arrondissement": "6th",
+          "category": "chocolatier",
+          "description": "Salted butter caramel specialist, originally from Brittany.",
+          "lat": 48.853801,
+          "lng": 2.3362026
+        },
+        {
+          "name": "Michel Chaudun",
+          "address": "149 rue de l'Université",
+          "arrondissement": "7th",
+          "category": "chocolatier",
+          "description": "Chocolate Pavés (cobblestone-shaped) and disks with cocoa nibs.",
+          "lat": 48.8610748,
+          "lng": 2.3057381
+        },
+        {
+          "name": "Ladurée",
+          "address": "16 rue Royale",
+          "arrondissement": "8th",
+          "category": "patisserie",
+          "description": "Credited with inventing the Parisian macaron sandwich. Historic tea salon.",
+          "lat": 48.8684273,
+          "lng": 2.3236138
+        },
+        {
+          "name": "Sadaharu Aoki",
+          "address": "35 rue de Vaugirard",
+          "arrondissement": "6th",
+          "category": "patisserie",
+          "description": "Japanese pastry maker. Green tea galettes and cherry blossom éclairs.",
+          "lat": 48.8479815,
+          "lng": 2.3303346
+        },
+        {
+          "name": "Fou de Pâtisserie",
+          "address": "45 rue Montorgueil",
+          "arrondissement": "2nd",
+          "category": "patisserie",
+          "description": "Curates and sells pastries from many of the city's best bakers in one spot.",
+          "lat": 48.8649348,
+          "lng": 2.346773
+        },
+        {
+          "name": "Le Boulanger de la Tour",
+          "address": "2 rue du Cardinal Lemoine",
+          "arrondissement": "5th",
+          "category": "bakery",
+          "description": "Public bakery of the famous Tour d'Argent restaurant. Excellent baguettes.",
+          "lat": 48.8499176,
+          "lng": 2.3546603
+        },
+        {
+          "name": "Pain de Sucre",
+          "address": "14 rue Rambuteau",
+          "arrondissement": "3rd",
+          "category": "patisserie",
+          "description": "Marshmallows sold in jars and creative pastries by Didier Mathray.",
+          "lat": 48.8606062,
+          "lng": 2.3555433
+        },
+        {
+          "name": "Maison Georges Larnicol",
+          "address": "14 rue de Rivoli",
+          "arrondissement": "4th",
+          "category": "specialty",
+          "description": "Kouignettes — small kouign-amann pastries sold by weight.",
+          "lat": 48.8556349,
+          "lng": 2.3597739
+        },
+        {
+          "name": "Benoît Castel",
+          "address": "150 rue de Ménilmontant",
+          "arrondissement": "20th",
+          "category": "patisserie",
+          "description": "Neighborhood pâtisserie. Far Breton and chocolate millefeuille.",
+          "lat": 48.8703371,
+          "lng": 2.3980481
+        },
+        {
+          "name": "Le Petit Grain",
+          "address": "7 rue Denoyez",
+          "arrondissement": "20th",
+          "category": "bakery",
+          "description": "Natural fermentation. Contender for best croissant in Paris.",
+          "lat": 48.8713936,
+          "lng": 2.3786103
+        },
+        {
+          "name": "Sain Boulangerie",
+          "address": "15 rue Marie et Louise",
+          "arrondissement": "10th",
+          "category": "bakery",
+          "description": "Chaussons aux pommes (apple turnovers) and naturally-leavened breads.",
+          "lat": 48.8719421,
+          "lng": 2.3661704
+        },
+        {
+          "name": "Maison Aleph",
+          "address": "20 rue de la Verrerie",
+          "arrondissement": "4th",
+          "category": "specialty",
+          "description": "Middle Eastern-French fusion pastries. Madagascar vanilla flan.",
+          "lat": 48.8573487,
+          "lng": 2.3547815
+        },
+        {
+          "name": "The French Bastards",
+          "address": "61 rue Oberkampf",
+          "arrondissement": "11th",
+          "category": "patisserie",
+          "description": "Lemon Meringue Tart and Cinnamon Babka. Hefty American-style pastries.",
+          "lat": 48.8648086,
+          "lng": 2.3728371
+        },
+        {
+          "name": "Tapisserie",
+          "address": "65 rue de Charonne",
+          "arrondissement": "11th",
+          "category": "bakery",
+          "description": "From the Septime restaurant team. Tarte à l'Érable (maple syrup tart).",
+          "lat": 48.8535486,
+          "lng": 2.3799549
+        },
+        {
+          "name": "Plaq Chocolat",
+          "address": "4 rue du Nil",
+          "arrondissement": "2nd",
+          "category": "chocolatier",
+          "description": "Bean-to-bar chocolate roasted on-site. Single-origin bars and chocolate sorbet.",
+          "lat": 48.8678425,
+          "lng": 2.3480821
+        },
+        {
+          "name": "François Pralus",
+          "address": "35 rue Rambuteau",
+          "arrondissement": "3rd",
+          "category": "chocolatier",
+          "description": "Bean-to-bar. Famous for the Praluline, a brioche studded with pink pralines.",
+          "lat": 48.8610538,
+          "lng": 2.3537639
+        },
+        {
+          "name": "Maison Georges Larnicol (Saint-Germain)",
+          "address": "132 boulevard Saint-Germain",
+          "arrondissement": "6th",
+          "category": "specialty",
+          "description": "Second location. Kouignettes — small kouign-amann pastries sold by weight.",
+          "lat": 48.8525276,
+          "lng": 2.3391151
+        },
+        {
+          "name": "Benoît Castel (Oberkampf)",
+          "address": "72 rue Jean-Pierre Timbaud",
+          "arrondissement": "11th",
+          "category": "patisserie",
+          "description": "Second location. Far Breton and chocolate millefeuille.",
+          "lat": 48.8670822,
+          "lng": 2.3753114
+        }
+      ]
+    }
+  ]
+}
