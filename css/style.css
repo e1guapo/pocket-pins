@@ -38,6 +38,24 @@ header h1 {
   font-weight: 600;
 }
 
+#header-controls {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+#city-select {
+  background: white;
+  color: var(--pink);
+  border: none;
+  border-radius: 20px;
+  padding: 6px 10px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  appearance: auto;
+}
+
 #locate-btn {
   background: white;
   color: var(--pink);

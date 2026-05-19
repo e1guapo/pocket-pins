@@ -1,5 +1,4 @@
 (function () {
-  const PARIS = [48.8566, 2.3522];
   const CATEGORY_COLORS = {
     bakery: '#e65100',
     patisserie: '#c2185b',
@@ -9,6 +8,7 @@
   };
 
   let map, userMarker, userLatLng, allPlaces = [], collections = [], markers = [];
+  let locationIndex = [];
 
   function haversine(lat1, lon1, lat2, lon2) {
     const R = 6371e3;
@@ -148,22 +148,9 @@
     }).join('');
   }
 
-  async function loadData() {
-    const res = await fetch('data/shops.json');
-    const db = await res.json();
-    collections = db.collections;
-    allPlaces = collections.flatMap(c =>
-      c.places.map(p => Object.assign({}, p, { _source: c.source }))
-    );
-    return allPlaces;
-  }
-
-  function initMap() {
-    map = L.map('map').setView(PARIS, 13);
-    L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
-      maxZoom: 19,
-      attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'
-    }).addTo(map);
+  function clearMarkers() {
+    markers.forEach(m => map.removeLayer(m));
+    markers = [];
   }
 
   function addMarkers(places) {
@@ -178,17 +165,56 @@
     });
   }
 
+  async function loadLocation(loc) {
+    const res = await fetch(loc.file);
+    const data = await res.json();
+
+    collections = data.collections;
+    allPlaces = collections.flatMap(c =>
+      c.places.map(p => Object.assign({}, p, { _source: c.source }))
+    );
+
+    map.setView(data.center, data.zoom);
+    clearMarkers();
+    addMarkers(allPlaces);
+    renderSources();
+    renderList();
+
+    document.getElementById('loading').style.display = 'none';
+  }
+
+  function initMap() {
+    map = L.map('map').setView([48.8566, 2.3522], 13);
+    L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      maxZoom: 19,
+      attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+    }).addTo(map);
+  }
+
   async function init() {
     initMap();
 
     try {
-      const places = await loadData();
-      document.getElementById('loading').style.display = 'none';
-      renderSources();
-      addMarkers(places);
-      renderList();
+      const res = await fetch('data/index.json');
+      const index = await res.json();
+      locationIndex = index.locations;
+
+      const select = document.getElementById('city-select');
+      locationIndex.forEach(loc => {
+        const opt = document.createElement('option');
+        opt.value = loc.id;
+        opt.textContent = loc.name;
+        select.appendChild(opt);
+      });
+
+      select.addEventListener('change', function () {
+        const loc = locationIndex.find(l => l.id === this.value);
+        if (loc) loadLocation(loc);
+      });
+
+      await loadLocation(locationIndex[0]);
     } catch (err) {
-      document.getElementById('loading').textContent = 'Failed to load shop data.';
+      document.getElementById('loading').textContent = 'Failed to load data.';
     }
 
     let watchId = null;

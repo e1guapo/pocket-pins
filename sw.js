@@ -1,10 +1,10 @@
-const CACHE_NAME = 'pastry-finder-v1';
+const CACHE_NAME = 'pocket-pins-v1';
 const APP_ASSETS = [
   './',
   'index.html',
   'css/style.css',
   'js/app.js',
-  'data/shops.json',
+  'data/index.json',
   'manifest.json',
   'https://unpkg.com/leaflet@1.9.4/dist/leaflet.css',
   'https://unpkg.com/leaflet@1.9.4/dist/leaflet.js'
@@ -28,6 +28,18 @@ self.addEventListener('activate', event => {
 
 self.addEventListener('fetch', event => {
   const url = new URL(event.request.url);
+
+  if (url.pathname.startsWith('/data/') && url.pathname.endsWith('.json') && url.pathname !== '/data/index.json') {
+    event.respondWith(
+      caches.open(CACHE_NAME).then(cache =>
+        fetch(event.request).then(response => {
+          if (response.ok) cache.put(event.request, response.clone());
+          return response;
+        }).catch(() => cache.match(event.request))
+      )
+    );
+    return;
+  }
 
   if (url.hostname === 'tile.openstreetmap.org') {
     event.respondWith(

@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
   <meta name="theme-color" content="#c2185b">
-  <title>Paris Pastry Finder</title>
+  <title>Pocket Pins</title>
   <link rel="manifest" href="manifest.json">
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🥐</text></svg>">
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
@@ -12,8 +12,11 @@
 </head>
 <body>
   <header>
-    <h1>Paris Pastry Finder</h1>
-    <button id="locate-btn">📍 Locate me</button>
+    <h1>Pocket Pins</h1>
+    <div id="header-controls">
+      <select id="city-select"></select>
+      <button id="locate-btn">📍 Locate me</button>
+    </div>
   </header>
   <div id="map"></div>
   <div id="sources"></div>

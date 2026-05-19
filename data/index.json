@@ -1,0 +1,9 @@
+{
+  "locations": [
+    {
+      "id": "paris",
+      "name": "Paris",
+      "file": "data/paris.json"
+    }
+  ]
+}

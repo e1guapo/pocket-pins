@@ -1,9 +1,8 @@
 #!/usr/bin/env node
 
-const fs = require('fs');
-const path = require('path');
+// Usage: node scripts/geocode.js data/paris.json
 
-const DATA_PATH = path.join(__dirname, '..', 'data', 'shops.json');
+const fs = require('fs');
 const NOMINATIM_URL = 'https://nominatim.openstreetmap.org/search';
 const DELAY_MS = 1100;
 
@@ -11,17 +10,16 @@ function sleep(ms) {
   return new Promise(resolve => setTimeout(resolve, ms));
 }
 
-async function geocode(address, city = 'Paris, France') {
+async function geocode(address, city) {
   const query = `${address}, ${city}`;
   const params = new URLSearchParams({
     q: query,
     format: 'json',
-    limit: '1',
-    countrycodes: 'fr'
+    limit: '1'
   });
 
   const res = await fetch(`${NOMINATIM_URL}?${params}`, {
-    headers: { 'User-Agent': 'ParisPastryFinder/1.0 (personal trip planner)' }
+    headers: { 'User-Agent': 'PocketPins/1.0 (personal trip planner)' }
   });
 
   if (!res.ok) throw new Error(`Nominatim returned ${res.status} for "${query}"`);
@@ -33,8 +31,15 @@ async function geocode(address, city = 'Paris, France') {
 }
 
 async function main() {
-  const raw = fs.readFileSync(DATA_PATH, 'utf-8');
+  const filePath = process.argv[2];
+  if (!filePath) {
+    console.error('Usage: node scripts/geocode.js <city-file.json>');
+    process.exit(1);
+  }
+
+  const raw = fs.readFileSync(filePath, 'utf-8');
   const db = JSON.parse(raw);
+  const cityName = db.name || 'unknown city';
   let updated = 0;
   let failed = [];
 
@@ -48,7 +53,7 @@ async function main() {
       await sleep(DELAY_MS);
       console.log(`  geocoding: ${place.name} — ${place.address}`);
 
-      const coords = await geocode(place.address);
+      const coords = await geocode(place.address, cityName);
       if (coords) {
         place.lat = coords.lat;
         place.lng = coords.lng;
@@ -61,8 +66,8 @@ async function main() {
     }
   }
 
-  fs.writeFileSync(DATA_PATH, JSON.stringify(db, null, 2) + '\n');
-  console.log(`\nDone. Updated ${updated} places.`);
+  fs.writeFileSync(filePath, JSON.stringify(db, null, 2) + '\n');
+  console.log(`\nDone. Updated ${updated} places in ${cityName}.`);
   if (failed.length) console.log(`Failed: ${failed.join(', ')}`);
 }
 
