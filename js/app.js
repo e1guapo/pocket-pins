@@ -140,7 +140,7 @@
   function renderSources() {
     const container = document.getElementById('sources');
     container.innerHTML = collections.map(c => {
-      const inner = c.source + ' <span class="source-chip-count">(' + c.places.length + ')</span>';
+      const inner = c.name + ' <span class="source-chip-count">(' + c.places.length + ')</span>';
       if (c.sourceUrl) {
         return '<a class="source-chip" href="' + c.sourceUrl + '" target="_blank" rel="noopener">' + inner + '</a>';
       }
