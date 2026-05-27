@@ -30,6 +30,7 @@
 
   let map, userMarker, userLatLng, allPlaces = [], collections = [], markers = [];
   let locationIndex = [];
+  let activeCollections = new Set();
 
   function haversine(lat1, lon1, lat2, lon2) {
     const R = 6371e3;
@@ -70,10 +71,14 @@
     return html;
   }
 
+  function getVisiblePlaces() {
+    return allPlaces.filter(p => activeCollections.has(p._collectionName));
+  }
+
   function renderList() {
     const list = document.getElementById('shop-list');
     const count = document.getElementById('shop-count');
-    const sorted = [...allPlaces];
+    const sorted = [...getVisiblePlaces()];
 
     if (userLatLng) {
       sorted.forEach(p => {
@@ -161,12 +166,33 @@
   function renderSources() {
     const container = document.getElementById('sources');
     container.innerHTML = collections.map(c => {
+      const active = activeCollections.has(c.name);
       const inner = c.name + ' <span class="source-chip-count">(' + c.places.length + ')</span>';
-      if (c.sourceUrl) {
-        return '<a class="source-chip" href="' + c.sourceUrl + '" target="_blank" rel="noopener">' + inner + '</a>';
-      }
-      return '<span class="source-chip">' + inner + '</span>';
+      return '<button class="source-chip' + (active ? ' source-chip-active' : '') +
+        '" data-collection="' + c.name + '">' + inner + '</button>';
     }).join('');
+
+    container.querySelectorAll('.source-chip').forEach(chip => {
+      chip.addEventListener('click', function () {
+        const name = this.dataset.collection;
+        if (activeCollections.has(name)) {
+          if (activeCollections.size > 1) {
+            activeCollections.delete(name);
+          }
+        } else {
+          activeCollections.add(name);
+        }
+        renderSources();
+        refreshView();
+      });
+    });
+  }
+
+  function refreshView() {
+    clearMarkers();
+    addMarkers(getVisiblePlaces());
+    updateMarkerPopups();
+    renderList();
   }
 
   function clearMarkers() {
@@ -191,8 +217,9 @@
     const data = await res.json();
 
     collections = data.collections;
+    activeCollections = new Set(collections.map(c => c.name));
     allPlaces = collections.flatMap(c =>
-      c.places.map(p => Object.assign({}, p, { _source: c.source }))
+      c.places.map(p => Object.assign({}, p, { _source: c.source, _collectionName: c.name }))
     );
 
     map.setView(data.center, data.zoom);
