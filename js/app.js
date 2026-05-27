@@ -24,7 +24,8 @@
     patisserie: '#c2185b',
     chocolatier: '#4e342e',
     'ice-cream': '#00838f',
-    specialty: '#7b1fa2'
+    specialty: '#7b1fa2',
+    restaurant: '#1565c0'
   };
 
   let map, userMarker, userLatLng, allPlaces = [], collections = [], markers = [];

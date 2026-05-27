@@ -7,7 +7,7 @@
   "zoom": 13,
   "collections": [
     {
-      "name": "Paris Pastry Shops (Lebovitz)",
+      "name": "Pastry Shops (Lebovitz)",
       "source": "David Lebovitz",
       "sourceUrl": "https://www.davidlebovitz.com/paris-pastry-shops-chocolate-bakeries-patisseries-french-france/",
       "places": [
@@ -370,6 +370,427 @@
           "description": "Second location. Far Breton and chocolate millefeuille.",
           "lat": 48.8670822,
           "lng": 2.3753114
+        }
+      ]
+    },
+    {
+      "name": "Restaurants (Lebovitz)",
+      "source": "David Lebovitz",
+      "sourceUrl": "https://www.davidlebovitz.com/paris/",
+      "places": [
+        {
+          "name": "A La Biche au Bois",
+          "address": "45 avenue Ledru Rollin",
+          "arrondissement": "12th",
+          "category": "restaurant",
+          "description": "Game dishes, fixed menus, cheese course, and gargantuan salade Perigordine.",
+          "lat": 48.8534226,
+          "lng": 2.3771498
+        },
+        {
+          "name": "Au Passage",
+          "address": "1 bis Passage Saint-Sébastien",
+          "arrondissement": "11th",
+          "category": "restaurant",
+          "description": "Fresh small plates for sharing. Roasted lamb shoulder standout.",
+          "lat": 48.8618136,
+          "lng": 2.3698108
+        },
+        {
+          "name": "Automne",
+          "address": "11 rue Richard Lenoir",
+          "arrondissement": "11th",
+          "category": "restaurant",
+          "description": "One Michelin star. Seasonal tasting menus with fresh products.",
+          "lat": 48.8547774,
+          "lng": 2.3821622
+        },
+        {
+          "name": "Aux Bons Crus",
+          "address": "54 rue Godefroy Cavaignac",
+          "arrondissement": "11th",
+          "category": "restaurant",
+          "description": "Hearty French cooking — steak frites, tête de veau.",
+          "lat": 48.8571984,
+          "lng": 2.3799381
+        },
+        {
+          "name": "Baca'v",
+          "address": "6 rue des Fossés Saint-Michel",
+          "arrondissement": "5th",
+          "category": "restaurant",
+          "description": "Urban auberge serving seasonal French fare.",
+          "lat": 48.8517,
+          "lng": 2.3437
+        },
+        {
+          "name": "Bellota-Bellota",
+          "address": "18 rue Jean-Nicot",
+          "arrondissement": "7th",
+          "category": "restaurant",
+          "description": "Tapas bar with fabulous hams from wild acorn-fed pigs.",
+          "lat": 48.8604337,
+          "lng": 2.3073196
+        },
+        {
+          "name": "Breizh Café",
+          "address": "109 rue Vieille du Temple",
+          "arrondissement": "4th",
+          "category": "restaurant",
+          "description": "Terrific crêpes and buckwheat galettes with Bordier butter.",
+          "lat": 48.8606169,
+          "lng": 2.3618584
+        },
+        {
+          "name": "Café les Deux Gares",
+          "address": "1 rue des Deux Gares",
+          "arrondissement": "10th",
+          "category": "restaurant",
+          "description": "Fresh oysters, tuna, mackerel, mussels in a restored café setting.",
+          "lat": 48.8782878,
+          "lng": 2.3582057
+        },
+        {
+          "name": "Café de la Nouvelle Mairie",
+          "address": "19 rue des Fossés-Saint-Jacques",
+          "arrondissement": "5th",
+          "category": "restaurant",
+          "description": "Well-sourced food including seafood and housemade sausages. True local bistro.",
+          "lat": 48.8454582,
+          "lng": 2.3447912
+        },
+        {
+          "name": "Caluche",
+          "address": "12 rue de Mirbel",
+          "arrondissement": "5th",
+          "category": "restaurant",
+          "description": "Daily-changing menu with remarkably fresh fare and natural wines.",
+          "lat": 48.8410579,
+          "lng": 2.3509083
+        },
+        {
+          "name": "Chez Dumonet",
+          "address": "117 rue du Cherche-Midi",
+          "arrondissement": "6th",
+          "category": "restaurant",
+          "description": "Reliably good bistro — duck confit and Grand Marnier soufflé.",
+          "lat": 48.84584,
+          "lng": 2.3198164
+        },
+        {
+          "name": "Chez Georges",
+          "address": "1 rue du Mail",
+          "arrondissement": "2nd",
+          "category": "restaurant",
+          "description": "Classic French bistro. Escargots, steak frites, sole meunière.",
+          "lat": 48.8663947,
+          "lng": 2.3414059
+        },
+        {
+          "name": "Chez Omar",
+          "address": "47 rue de Bretagne",
+          "arrondissement": "3rd",
+          "category": "restaurant",
+          "description": "North African couscous, steak-frites, lamb brochettes. Open every day.",
+          "lat": 48.8632828,
+          "lng": 2.3614997
+        },
+        {
+          "name": "Chez Paul",
+          "address": "13 rue de Charonne",
+          "arrondissement": "11th",
+          "category": "restaurant",
+          "description": "Côte de Boeuf, duck confit. One of the true remaining bistros.",
+          "lat": 48.8527801,
+          "lng": 2.3743656
+        },
+        {
+          "name": "Comer",
+          "address": "96 rue d'Hauteville",
+          "arrondissement": "10th",
+          "category": "restaurant",
+          "description": "Excellent Mexican cuisine using fresh French ingredients. Vegan-friendly.",
+          "lat": 48.8772997,
+          "lng": 2.351547
+        },
+        {
+          "name": "Comice",
+          "address": "31 avenue de Versailles",
+          "arrondissement": "16th",
+          "category": "restaurant",
+          "description": "Husband-chef and wife-sommelier team. Exquisite fixed menu dining.",
+          "lat": 48.849467,
+          "lng": 2.2760946
+        },
+        {
+          "name": "Frenchie Wine Bar",
+          "address": "5 rue de Nil",
+          "arrondissement": "2nd",
+          "category": "restaurant",
+          "description": "Small plates with excellent food. Wine bar arm of famed Frenchie.",
+          "lat": 48.8678,
+          "lng": 2.3481
+        },
+        {
+          "name": "Grande Brasserie",
+          "address": "6 rue de la Bastille",
+          "arrondissement": "11th",
+          "category": "restaurant",
+          "description": "Classic brasserie — oeuf mayonnaise, oysters, pâté en croûte. Open daily.",
+          "lat": 48.8537742,
+          "lng": 2.3679521
+        },
+        {
+          "name": "Holybelly",
+          "address": "5 rue Lucien Sampaix",
+          "arrondissement": "10th",
+          "category": "restaurant",
+          "description": "Breakfast and lunch with the freshest ingredients and locally roasted coffee.",
+          "lat": 48.871003,
+          "lng": 2.3598192
+        },
+        {
+          "name": "Jones",
+          "address": "43 rue Godefroy Cavaignac",
+          "arrondissement": "11th",
+          "category": "restaurant",
+          "description": "Wine bar/restaurant with creative dishes like veal milanese.",
+          "lat": 48.8566577,
+          "lng": 2.3801283
+        },
+        {
+          "name": "Juveniles",
+          "address": "47 rue de Richelieu",
+          "arrondissement": "1st",
+          "category": "restaurant",
+          "description": "Intimate wine bar and Paris fixture. Daily-changing menu with terrines.",
+          "lat": 48.8662741,
+          "lng": 2.3371009
+        },
+        {
+          "name": "Kubri",
+          "address": "108 rue Amelot",
+          "arrondissement": "11th",
+          "category": "restaurant",
+          "description": "Lebanese cuisine by cheffe Rita Higgins. Daily-changing menu. Standout roast chicken.",
+          "lat": 48.8629957,
+          "lng": 2.3672976
+        },
+        {
+          "name": "La Buvette",
+          "address": "67 rue Saint-Maur",
+          "arrondissement": "11th",
+          "category": "restaurant",
+          "description": "Small casual wine bar with natural wines, housemade terrine, and giant beans.",
+          "lat": 48.8629277,
+          "lng": 2.3792483
+        },
+        {
+          "name": "L'Apibo",
+          "address": "31 rue Tiquetonne",
+          "arrondissement": "2nd",
+          "category": "restaurant",
+          "description": "Contemporary bistronomique cooking with especially good desserts.",
+          "lat": 48.8647093,
+          "lng": 2.3474745
+        },
+        {
+          "name": "L'Avant Comptoir de la Mer",
+          "address": "3 Carrefour de l'Odéon",
+          "arrondissement": "6th",
+          "category": "restaurant",
+          "description": "Seafood stand-up wine bar — oysters, ceviche, salted butter at the bar.",
+          "lat": 48.8520522,
+          "lng": 2.3387654
+        },
+        {
+          "name": "Le Bambou",
+          "address": "70 rue Baudricourt",
+          "arrondissement": "13th",
+          "category": "restaurant",
+          "description": "Bustling, inexpensive, authentic Vietnamese food.",
+          "lat": 48.8251934,
+          "lng": 2.3624983
+        },
+        {
+          "name": "Le Bon Georges",
+          "address": "45 rue Saint-Georges",
+          "arrondissement": "9th",
+          "category": "restaurant",
+          "description": "Classic bistro with well-sourced meats. Steak tartare, steak frites.",
+          "lat": 48.8776287,
+          "lng": 2.3372618
+        },
+        {
+          "name": "Le Boui-Boui",
+          "address": "11 rue Marie Stuart",
+          "arrondissement": "2nd",
+          "category": "restaurant",
+          "description": "Hearty Auvergne cuisine. Housemade terrine. A real French restaurant.",
+          "lat": 48.865006,
+          "lng": 2.3476389
+        },
+        {
+          "name": "Le Clarence",
+          "address": "31 avenue Franklin Delano Roosevelt",
+          "arrondissement": "8th",
+          "category": "restaurant",
+          "description": "Two Michelin stars. Modern French with seafood focus in a 19th-century hôtel particulier.",
+          "lat": 48.8674115,
+          "lng": 2.3099361
+        },
+        {
+          "name": "Le Garde Robe",
+          "address": "41 rue de l'Arbre Sec",
+          "arrondissement": "1st",
+          "category": "restaurant",
+          "description": "Natural wines with charcuterie and cheeses. Friendly staff.",
+          "lat": 48.861036,
+          "lng": 2.3424178
+        },
+        {
+          "name": "Le Grand Bain",
+          "address": "14 rue Denoyez",
+          "arrondissement": "20th",
+          "category": "restaurant",
+          "description": "Daily specials and small plates for sharing. Natural wines in Belleville.",
+          "lat": 48.8716321,
+          "lng": 2.3785781
+        },
+        {
+          "name": "Le Petit Vendôme",
+          "address": "8 rue des Capucines",
+          "arrondissement": "2nd",
+          "category": "restaurant",
+          "description": "Arguably the best sandwiches in Paris, particularly the jambon-beurre.",
+          "lat": 48.8687918,
+          "lng": 2.3297124
+        },
+        {
+          "name": "Le Relais de l'Entrecôte",
+          "address": "20 rue Saint-Benoît",
+          "arrondissement": "6th",
+          "category": "restaurant",
+          "description": "One thing only — entrecôte and fries with tableside sauce. No reservations.",
+          "lat": 48.8546512,
+          "lng": 2.3328274
+        },
+        {
+          "name": "Le Rigmarole",
+          "address": "10 rue du Grand-Prieuré",
+          "arrondissement": "11th",
+          "category": "restaurant",
+          "description": "French ingredients with Japanese touch. Grilled meats. Lunch only.",
+          "lat": 48.8651683,
+          "lng": 2.3690583
+        },
+        {
+          "name": "Le Rubis",
+          "address": "10 rue du Marché Saint-Honoré",
+          "arrondissement": "1st",
+          "category": "restaurant",
+          "description": "Authentic Parisian wine bar with rustic lunch and charcuterie.",
+          "lat": 48.8661799,
+          "lng": 2.3313738
+        },
+        {
+          "name": "Le Saint-Sébastien",
+          "address": "42 rue Saint-Sébastien",
+          "arrondissement": "11th",
+          "category": "restaurant",
+          "description": "Modern, carefully-crafted French cooking with seasonal menu.",
+          "lat": 48.861567,
+          "lng": 2.3710293
+        },
+        {
+          "name": "Le Verre Volé",
+          "address": "67 rue de Lancry",
+          "arrondissement": "10th",
+          "category": "restaurant",
+          "description": "Fresh modern French cooking. Wine bottles lining the shelves.",
+          "lat": 48.8728069,
+          "lng": 2.3634412
+        },
+        {
+          "name": "Les Arlots",
+          "address": "136 rue du Faubourg Poissonnière",
+          "arrondissement": "9th",
+          "category": "restaurant",
+          "description": "Daily-changing menu. Entrecôte, sausage and mash.",
+          "lat": 48.8806562,
+          "lng": 2.3499506
+        },
+        {
+          "name": "Little Breizh",
+          "address": "11 rue Grégoire de Tours",
+          "arrondissement": "6th",
+          "category": "restaurant",
+          "description": "Buckwheat galettes with ham, cheese, eggs. Also a sweet crêperie.",
+          "lat": 48.8532267,
+          "lng": 2.3379119
+        },
+        {
+          "name": "Oxymore",
+          "address": "60 rue Saint-Maur",
+          "arrondissement": "11th",
+          "category": "restaurant",
+          "description": "French pizzeria with decidedly French toppings.",
+          "lat": 48.8631422,
+          "lng": 2.379333
+        },
+        {
+          "name": "Parcelles",
+          "address": "13 rue Chapon",
+          "arrondissement": "3rd",
+          "category": "restaurant",
+          "description": "Pressed pork terrine, fried sweetbreads, excellent wine list.",
+          "lat": 48.8631856,
+          "lng": 2.3567281
+        },
+        {
+          "name": "Poulette",
+          "address": "3 rue Étienne Marcel",
+          "arrondissement": "1st",
+          "category": "restaurant",
+          "description": "Turn-of-the-century restoration. Cuisine maison including steak-frites and quail.",
+          "lat": 48.863441,
+          "lng": 2.3504278
+        },
+        {
+          "name": "Recoin",
+          "address": "60 rue Saint-Sabin",
+          "arrondissement": "11th",
+          "category": "restaurant",
+          "description": "Neighborhood bistro with inventive food and daily-changing menu.",
+          "lat": 48.8590698,
+          "lng": 2.3689077
+        },
+        {
+          "name": "Saravanaa Bhavan",
+          "address": "170 rue du Faubourg Saint-Denis",
+          "arrondissement": "10th",
+          "category": "restaurant",
+          "description": "Completely vegetarian Indian restaurant. Very good food.",
+          "lat": 48.8798396,
+          "lng": 2.3574786
+        },
+        {
+          "name": "Septime",
+          "address": "80 rue de Charonne",
+          "arrondissement": "11th",
+          "category": "restaurant",
+          "description": "Nordic-inspired cuisine by chef Bertrand Grébaut. Sparkling fresh ingredients.",
+          "lat": 48.8536026,
+          "lng": 2.3809558
+        },
+        {
+          "name": "Verjus",
+          "address": "52 rue Richelieu",
+          "arrondissement": "1st",
+          "category": "restaurant",
+          "description": "Inventive outstanding cuisine. Daily-changing multi-course menus. Casual wine bar downstairs.",
+          "lat": 48.8663384,
+          "lng": 2.3372758
         }
       ]
     }

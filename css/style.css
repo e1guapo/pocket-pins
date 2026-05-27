@@ -280,12 +280,14 @@ header h1 {
 .cat-chocolatier  { background: #efebe9; color: #4e342e; }
 .cat-ice-cream    { background: #e0f7fa; color: #00838f; }
 .cat-specialty    { background: #f3e5f5; color: #7b1fa2; }
+.cat-restaurant   { background: #e3f2fd; color: #1565c0; }
 
 [data-theme="dark"] .cat-bakery       { background: rgba(230, 81, 0, 0.15); color: #ffab40; }
 [data-theme="dark"] .cat-patisserie   { background: rgba(194, 24, 91, 0.15); color: #f48fb1; }
 [data-theme="dark"] .cat-chocolatier  { background: rgba(78, 52, 46, 0.25); color: #bcaaa4; }
 [data-theme="dark"] .cat-ice-cream    { background: rgba(0, 131, 143, 0.15); color: #4dd0e1; }
 [data-theme="dark"] .cat-specialty    { background: rgba(123, 31, 162, 0.15); color: #ce93d8; }
+[data-theme="dark"] .cat-restaurant   { background: rgba(21, 101, 192, 0.15); color: #64b5f6; }
 
 .shop-address {
   font-size: 13px;
