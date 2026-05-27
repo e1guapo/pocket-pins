@@ -1,4 +1,24 @@
 (function () {
+  function initTheme() {
+    const stored = localStorage.getItem('theme');
+    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+    const theme = stored || (prefersDark ? 'dark' : 'light');
+    document.documentElement.setAttribute('data-theme', theme);
+    updateThemeIcon(theme);
+
+    document.getElementById('theme-toggle').addEventListener('click', function () {
+      const current = document.documentElement.getAttribute('data-theme');
+      const next = current === 'dark' ? 'light' : 'dark';
+      document.documentElement.setAttribute('data-theme', next);
+      localStorage.setItem('theme', next);
+      updateThemeIcon(next);
+    });
+  }
+
+  function updateThemeIcon(theme) {
+    document.getElementById('theme-toggle').textContent = theme === 'dark' ? '☀️' : '🌙';
+  }
+
   const CATEGORY_COLORS = {
     bakery: '#e65100',
     patisserie: '#c2185b',
@@ -192,6 +212,7 @@
   }
 
   async function init() {
+    initTheme();
     initMap();
 
     try {
