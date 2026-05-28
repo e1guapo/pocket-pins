@@ -163,18 +163,35 @@
     document.getElementById('locate-btn').classList.remove('active');
   }
 
-  function renderSources() {
-    const container = document.getElementById('sources');
-    container.innerHTML = collections.map(c => {
-      const active = activeCollections.has(c.name);
-      const inner = c.name + ' <span class="source-chip-count">(' + c.places.length + ')</span>';
-      return '<button class="source-chip' + (active ? ' source-chip-active' : '') +
-        '" data-collection="' + c.name + '">' + inner + '</button>';
+  function updateCollectionsToggleLabel() {
+    var btn = document.getElementById('collections-toggle');
+    var count = activeCollections.size;
+    var total = collections.length;
+    btn.textContent = 'Collections (' + count + '/' + total + ')';
+  }
+
+  function renderCollections() {
+    var dropdown = document.getElementById('collections-dropdown');
+    dropdown.innerHTML = collections.map(function (c) {
+      var checked = activeCollections.has(c.name);
+      var linkHtml = c.sourceUrl
+        ? '<a class="collection-link" href="' + c.sourceUrl + '" target="_blank" rel="noopener" title="View source">↗</a>'
+        : '';
+      return '<div class="collection-row" data-collection="' + c.name + '">' +
+        '<div class="collection-check' + (checked ? ' checked' : '') + '"></div>' +
+        '<div class="collection-info">' +
+          '<div class="collection-name">' + c.name + '</div>' +
+          '<div class="collection-count">' + c.places.length + ' places</div>' +
+        '</div>' +
+        linkHtml +
+      '</div>';
     }).join('');
 
-    container.querySelectorAll('.source-chip').forEach(chip => {
-      chip.addEventListener('click', function () {
-        const name = this.dataset.collection;
+    dropdown.querySelectorAll('.collection-row').forEach(function (row) {
+      var check = row.querySelector('.collection-check');
+      check.addEventListener('click', function (e) {
+        e.stopPropagation();
+        var name = row.dataset.collection;
         if (activeCollections.has(name)) {
           if (activeCollections.size > 1) {
             activeCollections.delete(name);
@@ -182,9 +199,31 @@
         } else {
           activeCollections.add(name);
         }
-        renderSources();
+        renderCollections();
+        updateCollectionsToggleLabel();
         refreshView();
       });
+    });
+
+    updateCollectionsToggleLabel();
+  }
+
+  function initCollectionsDropdown() {
+    var toggle = document.getElementById('collections-toggle');
+    var dropdown = document.getElementById('collections-dropdown');
+
+    toggle.addEventListener('click', function () {
+      var isOpen = !dropdown.classList.contains('hidden');
+      dropdown.classList.toggle('hidden');
+      toggle.classList.toggle('open');
+      if (isOpen) return;
+    });
+
+    document.addEventListener('click', function (e) {
+      if (!e.target.closest('#collections-bar')) {
+        dropdown.classList.add('hidden');
+        toggle.classList.remove('open');
+      }
     });
   }
 
@@ -225,7 +264,7 @@
     map.setView(data.center, data.zoom);
     clearMarkers();
     addMarkers(allPlaces);
-    renderSources();
+    renderCollections();
     renderList();
 
     document.getElementById('loading').style.display = 'none';
@@ -241,6 +280,7 @@
 
   async function init() {
     initTheme();
+    initCollectionsDropdown();
     initMap();
 
     try {
